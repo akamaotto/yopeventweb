@@ -1,0 +1,32 @@
+YopEvent
+	
+	*Events
+		>Eventowner = userId
+		>EventId
+			-Tv Show
+			-Title
+			-Spot
+			-Date
+			-Duration
+			-Descriptio
+		>EventCoverId
+			-EventId
+			-image url
+
+	*Users
+		>UserId
+			-userYopname
+			-userFbname
+			-userDateOfBirth
+			-userEmail
+			-userFbId
+			-userFbPicUrl
+			-uerFbLink
+			-userGender
+		>UserFriendList          
+			-friendId            
+				-name          
+				-pic
+				-gender
+				-birthday
+				-etc
