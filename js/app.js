@@ -1,12 +1,18 @@
 var app = angular.module("yopi", ["firebase"]);
 
-app.controller("EventCtrl", function($scope, $firebase) {
-  var ref = new Firebase("https://yopi.firebaseio.com/events/event list").limitToLast(12);
+app.controller("EventCtrl", function($scope, $firebase, $window) {
+  var ref = new Firebase("https://yopevent.firebaseio.com/").limitToLast(12);
   var sync = $firebase(ref);
   $scope.events = sync.$asArray();
   
   //console.log($scope.events.Title);
-  
+  $scope.login = function(){
+    ref.authWithOAuthPopup("facebook", function(error, authData) { ... }, {
+      remember: "sessionOnly",
+      scope: "email,user_likes"
+    });
+    $window.location.href = "https://yopevent.firebaseio.com/events.html";
+  };
   ref.on('child_added', function(snap) {
       console.log("added", snap.key());
     });

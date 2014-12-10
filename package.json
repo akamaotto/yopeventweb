@@ -1,0 +1,23 @@
+{
+  "name": "yopeventweb",
+  "version": "1.0.0",
+  "description": "yopevent\r ========",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akamaotto/yopeventweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akamaotto/yopeventweb/issues"
+  },
+  "homepage": "https://github.com/akamaotto/yopeventweb"
+}
