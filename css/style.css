@@ -547,7 +547,7 @@ a#loginButton img {
 	top: 0;
 	bottom: 0;
 	padding:20px 20px;
-	background:url(../http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -7px 18px;
+	background:url(http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -7px 18px;
 	border-radius: 0 5px 5px 0;
 	-webkit-border-radius: 0 5px 5px 0;
 	-moz-border-radius: 0 5px 5px 0;
@@ -555,7 +555,7 @@ a#loginButton img {
 }
 .flat:hover .selected::after,
 .flat.focus .selected::after{
-	background:url(../http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -44px 19px;
+	background:url(http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -44px 19px;
 }
 /* DROP DOWN WRAPPER */
 .flat div{
@@ -882,7 +882,7 @@ h4 {
 	top: 0;
 	bottom: 0;
 	padding:18px;
-	background:url(../http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -85px 8px;
+	background:url(http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -85px 8px;
 	border-radius: 0 5px 5px 0;
 	-webkit-border-radius: 0 5px 5px 0;
 	-moz-border-radius: 0 5px 5px 0;
@@ -890,7 +890,7 @@ h4 {
 }
 .metro:hover .selected::after,
 .metro.focus .selected::after{
-	/*-background:url(../http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -44px 19px;--*/
+	/*-background:url(http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -44px 19px;--*/
 }
 /* DROP DOWN WRAPPER */
 .metro div{
@@ -1007,7 +1007,7 @@ ul.filter li a i {
 	width: 45px;
 	height: 45px;
 	display: block;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat;
 }
 ul.filter li a i:hover{
 	opacity:0.8;
@@ -1056,7 +1056,7 @@ ul.filter li a i.icon5{
 i.home{
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -7px -93px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -7px -93px;
 	display: block;
 	position: absolute;
 	bottom:100px;
@@ -1065,7 +1065,7 @@ i.home{
 i.home1{
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -91px -93px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -91px -93px;
 	display: block;
 	position: absolute;
 	bottom:100px;
@@ -1074,7 +1074,7 @@ i.home1{
 i.home2{
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -170px -94px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -170px -94px;
 	display: block;
 	position: absolute;
 	bottom:100px;
@@ -1083,7 +1083,7 @@ i.home2{
 i.b_home {
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -7px -93px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -7px -93px;
 	display: block;
 	position: absolute;
 	bottom: 110px;
@@ -1092,7 +1092,7 @@ i.b_home {
 i.b_home1{
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -91px -93px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -91px -93px;
 	display: block;
 	position: absolute;
 	bottom:110px;
@@ -1128,7 +1128,7 @@ i.b_home1{
 i.search{
 	width:20px;
 	height:20px;
-	background:url(../http://uctoutreach.org/yopevent/images/search.png)no-repeat;
+	background:url(http://uctoutreach.org/yopevent/images/search.png)no-repeat;
 	float:left;
 }
 .view .mask,.view .content {
@@ -1335,7 +1335,7 @@ h4.blue{
 i.m_home {
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -7px -93px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -7px -93px;
 	display: block;
 	position: absolute;
 	bottom:135px;
@@ -1344,7 +1344,7 @@ i.m_home {
 i.m_home1 {
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -7px -169px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -7px -169px;
 	display: block;
 	position: absolute;
 	bottom:135px;
@@ -1470,47 +1470,47 @@ ul.icons li{
 ul.icons li i.icon1{
 	width: 110px;
 	height: 110px;
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -14px -134px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -14px -134px;
 	display: inline-block;
 }
 ul.icons li i.icon1:hover{
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -14px -12px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -14px -12px;
 }
 ul.icons li i.icon2{
 	width: 110px;
 	height: 110px;
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -145px -134px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -145px -134px;
 	display: inline-block;
 }
 ul.icons li i.icon2:hover{
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -145px -12px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -145px -12px;
 }
 ul.icons li i.icon3{
 	width: 110px;
 	height: 110px;
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -278px -134px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -278px -134px;
 	display: inline-block;
 }
 ul.icons li i.icon3:hover{
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -278px -12px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -278px -12px;
 }
 ul.icons li i.icon4{
 	width: 110px;
 	height: 110px;
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -409px -134px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -409px -134px;
 	display: inline-block;
 }
 ul.icons li i.icon4:hover{
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -409px -12px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -409px -12px;
 }
 ul.icons li i.icon5{
 	width: 110px;
 	height: 110px;
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -546px -134px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -546px -134px;
 	display: inline-block;
 }
 ul.icons li i.icon5:hover{
-	background: url(../http://uctoutreach.org/yopevent/images/icons.png) no-repeat -535px -12px;
+	background: url(http://uctoutreach.org/yopevent/images/icons.png) no-repeat -535px -12px;
 }
 ul.icons li i.icon2{
 	background-position:
@@ -1568,7 +1568,7 @@ ul.service_grid{
 i.s1{
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -96px -169px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -96px -169px;
 	display: block;
 	float: left;
 	margin-right: 1em;
@@ -1576,7 +1576,7 @@ i.s1{
 i.s2{
 	width: 67px;
 	height: 67px;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -185px -169px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat -185px -169px;
 	display: block;
 	float: left;
 	margin-right: 1em;
@@ -1608,7 +1608,7 @@ ul.service_grid li.desc1 p{
 }
 /*--footer--*/
 .footer{
-	background: url(../http://uctoutreach.org/yopevent/images/footer.jpg) no-repeat center top;
+	background: url(http://uctoutreach.org/yopevent/images/footer.jpg) no-repeat center top;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1706,7 +1706,7 @@ ul.footer_social li a i {
 	width:30px;
 	height: 35px;
 	display: block;
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png)no-repeat;
 }
 ul.footer_social li a i:hover{
 	opacity:0.8;
@@ -1917,28 +1917,28 @@ ul.feature li.feature_right p{
 i.icon-trophy{
 	width:32px;
 	height:32px;
-	background:url(../http://uctoutreach.org/yopevent/images/img-sprite.png)-215px -260px;
+	background:url(http://uctoutreach.org/yopevent/images/img-sprite.png)-215px -260px;
 	float:left;
 	margin-right:1em;
 }
 i.icon-tick{
 	width:32px;
 	height:32px;
-	background:url(../http://uctoutreach.org/yopevent/images/img-sprite.png)-187px -2px;
+	background:url(http://uctoutreach.org/yopevent/images/img-sprite.png)-187px -2px;
 	float:left;
 	margin-right:1em;
 }
 i.icon-audio{
 	width:32px;
 	height:37px;
-	background:url(../http://uctoutreach.org/yopevent/images/img-sprite.png)-257px -256px; 
+	background:url(http://uctoutreach.org/yopevent/images/img-sprite.png)-257px -256px; 
 	float:left;
 	margin-right:1em;
 }
 i.icon-video{
 	width:32px;
 	height:37px;
-	background:url(../http://uctoutreach.org/yopevent/images/img-sprite.png)-240px -1px;
+	background:url(http://uctoutreach.org/yopevent/images/img-sprite.png)-240px -1px;
 	float:left;
 	margin-right:1em;
 }
@@ -1991,7 +1991,7 @@ p.educate {
 	top: -152px;
 	width: 290px;
 	height: 219px;
-	background: url(../http://uctoutreach.org/yopevent/images/zoom.png) center center no-repeat;
+	background: url(http://uctoutreach.org/yopevent/images/zoom.png) center center no-repeat;
 	cursor: pointer;
 	transition: all .2s ease-in-out;
 	-webkit-transition: all .2s ease-in-out;
@@ -2286,7 +2286,7 @@ span.four {
 	width: 100%;
 }
 .flat .selected::after {
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -7px 14px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -7px 14px;
 }
 .banner input[type="text"] {
 	font-size: 0.85em;
@@ -2300,7 +2300,7 @@ span.four {
 }
 
 .flat:hover .selected::after, .flat.focus .selected::after {
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -44px 15px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat -44px 15px;
 }
 .bottom_nav {
 	text-align: center;
@@ -2542,10 +2542,10 @@ ul.icons li {
 	padding: 8px 0px 8px 10px;
 }
 .flat .selected::after {
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat 5px 8px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat 5px 8px;
 }
 .flat:hover .selected::after, .flat.focus .selected::after {
-	background: url(../http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat 5px 8px;
+	background: url(http://uctoutreach.org/yopevent/images/img-sprite.png) no-repeat 5px 8px;
 }
 .dropdown-button {
 	width: 41%;
