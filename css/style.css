@@ -7,6 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /**
  * Helvetica Neue Normal (No Stretch)
  */
+@font-face {
+    font-family: Ek Mukta;
+    src: url(https://fonts.googleapis.com/css?family=Ek+Mukta);
+}
  
 /* Helvetica Neue Black Font Stack */
 .{font-family: "HelveticaNeueBlack", "HelveticaNeue-Black", "Helvetica Neue Black", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Arial Black", sans-serif; font-weight:800; font-stretch:normal;}
@@ -1739,13 +1743,12 @@ ul.footer_social li a i.u_tube {
 	padding: 10px;
 	background: #fff;
 }
-.living_box:hover span.sale-label{
-	background:#1db05e;
-}
+
 .sale-label {
+
 	font-size: 1.2em;
 	color: #FFF;
-	background:#e94e38;
+	background:#fa6416;
 	padding: 9px;
 	text-align: center;
 	display: block;
@@ -1756,6 +1759,15 @@ ul.footer_social li a i.u_tube {
 }
 .sale-box {
 	position: absolute;
+	top: 16px;
+	font-weight: bold;
+	height: 70px;
+	
+	text-align: left;
+	z-index: 0;
+}
+
+.sales-box {
 	top: 16px;
 	font-weight: bold;
 	height: 70px;
@@ -1780,8 +1792,8 @@ ul.footer_social li a i.u_tube {
 	color:#e94e38;
 }
 .living_desc p {
-	color:#96a6a7;
-	font-size: 0.8925em;
+	color:#000000;
+	font-size: 1em;
 	line-height: 1.8em;
 	margin-bottom: 10px;
 }
@@ -2692,4 +2704,11 @@ right: -0px;
 	font-size: 125%;
 	font-weight: bolder;
 }
+h1 {
+	padding-bottom: 30px;
+}
 
+.contentImage{
+	height: 220px; 
+	width: 100%
+}
