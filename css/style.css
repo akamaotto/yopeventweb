@@ -176,6 +176,13 @@ div.div2 {
 	margin-bottom:40px;"
 }
 
+.coverImage{
+	height:220px;
+	width: 100%; 
+	background-color: #ababab;
+	margin-bottom:40px;"
+}
+
 .header{
 	background:#F5F8F5;
 	padding:0;
@@ -1764,6 +1771,16 @@ ul.footer_social li a i.u_tube {
 	height: 70px;
 	
 	text-align: left;
+	z-index: 0;
+}
+
+.uploadbutton-box {
+	position: absolute;
+	top: 180px;
+	font-weight: bold;
+	height: 200px;
+	
+	text-align: right;
 	z-index: 0;
 }
 

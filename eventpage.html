@@ -1,9 +1,4 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html ng-app="yopi">
 <head>
@@ -55,7 +50,271 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div >
-  <div ng-include src="'header.html'"></div>
-  <div ng-include src="'eventpage-body.html'"></div>
-  <div ng-include src="'footer.html'"></div>
+  
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header" style="padding-top: 8px">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img src="ico/logo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class=" menu collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav" id="nav" >
+                    <li class="user-item pull-left medium-right-margin">
+                      <a  href="javascript:void(0)">
+                        <div class="media-photo media-round user-profile-image">
+                          <img width="30" height="30" class="img-responsive img-circle" src="http://uctoutreach.org/yopevent/images/profilephoto.jpg" alt="">
+                        </div>
+                        <i class="icon icon-caret-down icon-light-gray h5"></i>
+                      </a> 
+                    </li> 
+                    <li class="valuename"><a href="#">akamaotto</a></li>
+                    <li><a class="btn btn-2" href=".bs-example-modal-md" data-toggle="modal" style="color:#fff;"><b>create a yopevent</b></a></li> 
+                    <!--If logged out -->
+                    <!--<li><a class="btn btn-3" href="index.html" style="color:#fff;"><b>connect with facebook</b></a></li> -->    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<!-- end header -->
+<!-- modal for the create envet button -->
+<div class="modal fade bs-example-modal-md" tabindex="-1" id="modal" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus"> </span>Create new event</h4>
+      </div>
+<form role="form" ng-submit="addEvent()">
+      <div class="modal-body">
+    
+            <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" ng-model="form.Title" placeholder="Title of the event" value="">
+              </div>
+              <div class="form-group">
+                <label for="tilte">Spot</label>
+                <input type="text" class="form-control" ng-model="form.Spot"  placeholder="Where is the event going take place" value="">
+              </div>
+              <div class="form-group">
+                <label for="tilte">Date</label>
+                <input id="datetimepicker" ng-model="form.Date" class="form-control" type="text" value="">
+              </div>             
+              </div>
+              <div>
+              </div>
+              <div class="col-lg-6">
+              <div class="form-group">
+                <label for="title">Duration</label>
+
+                <input type="tatdetime" class="form-control"  ng-model="form.Duration" placeholder="example: 1h or 3h or ..." value="">
+              </div>
+              <div class="form-group">
+                <label for="tilte">Description</label>
+                <textarea name="comment" class="form-control"  ng-model="form.Descrpition" form="usrform" placeholder="tell people what is the event about"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Event cover page</label>
+                <input type="file" id="exampleInputFile">
+              </div>             
+              </div>
+              </div>
+            
+      </div>
+      <div class="modal-footer">
+        <button type="reset" class="btn btn-sm btn-info" >reset</button>
+        <button  class="btn btn-sm btn-success" type="submit">Save and continue</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div> <!-- End modal -->
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=208819062661168&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- code for the basic profile informations -->
+<div class="living_middle" id="howworks">
+  <div class="container marketing">
+    <h1 ></h1>
+    <div class="row"  >
+      <!-- <div class="col-md-8 wow fadeInRight" data-wow-delay="0.4s"> -->
+      <div class="educate_grid" >
+
+        <div class="col-lg-8 col-md-offset-2 "  >
+
+
+<!--           <div id="spin"></div>
+          <h1>Firepano</h1>
+          <input class="hidden" type="file" accept="image/*" capture="camera" id="file-upload"/>
+          <br/>
+          <img class="pano" id="pano" />
+          <p id="pano1"></p> -->
+            <div class="coverAbout">
+          <img class="pano contentImage" id="pano" />
+        <span class="uploadbutton-box">
+          <div class="" >
+            <div id="spin"></div>
+            <input  type="file" accept="image/*" capture="camera" id="file-upload" class="btn btn-sm" value="paul" />
+            <p id="pano1"></p>
+          </div>
+        </span>
+        </div>
+        <div class="clearfix"></div>
+
+          
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="eventContent">
+                  <h3><strong>Barcelona vs Real Madrid</strong></h3>
+                  <p><strong>Title: </strong>El Classico @Rosebowls</p>
+                  <p><strong>Start Time: </strong>8:45pm</p>
+                  <p><strong>Duration: </strong>2h:30mins</p>
+                  <p><strong>Spot: </strong>Rose Bowls</p><br />
+
+                                  
+                </div> 
+
+                <div class="eventContent">
+                  <div class="fb-comments" data-href="http://yopisode.com" data-width="400" data-numposts="5" data-colorscheme="light"></div>
+                </div>  
+              </div>
+
+              <div class="col-lg-5 pull-left">
+
+                  <div class="eventContent">
+                    <div class="row invitebutton">
+                        <button class="pull-right  btn btn-small btn-warning eventsbtn" style="padding-left: 5px;">&nbsp;<span class="glyphicon glyphicon-user white"></span> &nbsp; Join &nbsp;</button>
+
+                        <button class="pull-right btn btn-small btn-danger eventsbtn"><span class="glyphicon glyphicon-new-window white"></span> &nbsp; Share</button>
+
+
+
+                        <span class="pull-right eventsbtn"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fyopisode.com&amp;width=40px&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=0&amp;appId=208819062661168" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:20px;" allowTransparency="true"></iframe>
+                        </span>
+                    </div>                    
+                  </div> 
+
+                  <div class="eventContent">
+                    <p><strong>Hosted by Otto Akama</strong></p>
+                    <p>Otto Beseka and 5 others will be there</p>
+                  </div>
+
+                  <div class="eventContent">
+                    <p><strong>Description & Specials</strong></p>
+                    <p>This is a 160 character limit description about this event. Focus on what's specials</p>
+                  </div>
+
+                  
+              </div> 
+                            
+            </div>
+            <!-- <div class="row">
+              <div class="col-lg-12">
+                <div class="eventContent">
+                  comments area
+                </div>   
+              </div>
+            </div> -->
+              
+            </div>
+          
+
+        </div><!-- /.col-lg-4 -->
+        </div>    
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <!-- start footer code -->
+<div class="footer">
+  <div class="container">
+    <div class="footer_grids">
+      <div class="col-md-3">
+        <h4>Company</h4>
+        <ul class="list1">
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://yopisode.tumblr.com" target="_blank">Blog</a></li>
+          <li><a href="press.html">Press</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="partnership.html">Partnership</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>For Organizers</h4>
+        <ul class="list1">
+          <li><a href="whyorganize.html">Why Organize</a></li>
+          <li><a href="howtoorganize.html">How to Organize</a></li>
+          <li><a href="hospitality.html">Hospitality</a></li>
+          <li><a href="spots.html">Yopevent Spots</a></li>
+          <li><a href="selltickets.html">Make Money (Sell Tickets)</a></li>
+          <li><a href="ambassador.html">Yopisode Ambassador Program</a></li>        
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h4>For Guests</h4>
+        <ul class="list1">
+          <li><a href="whyattend.html">Why Attend</a></li>
+          <li><a href="howitworks.html">How it Works</a></li>
+          <li><a href="trust-and-safety.html">Trust & Safety</a></li>
+          <li><a href="lifestyle.html">TV Community Lifestyle</a></li>
+          <li><a href="stories.html">Yopevent Stories</a></li>
+          <li><a href="invite.html">Make Money (Invite Friends)</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-md-3 last_grid">
+        <h4>Follow Us</h4>
+        <ul class="footer_social wow fadeInLeft" data-wow-delay="0.4s">
+          <li><a href="https://facebook.com/yopisode"> <i class="fb"> </i> </a></li>
+          <li><a href="https://twitter.com/yopisode"><i class="tw"> </i> </a></li>
+          <li><a href="#"><i class="google"> </i> </a></li>
+          <li><a href="#"><i class="u_tube"> </i> </a></li>
+        </ul>
+        <div class="copy wow fadeInRight" data-wow-delay="0.4s">
+          <p>&copy; Copyright 2014.<a href="http://yopisode.com/" target="_blank"> Yopisode, Inc.</a> </p>
+        </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/docs.min.js" type="text/javascript" ></script>
+<script src="js/jquery.datetimepicker.js"></script>
+<script type="text/javascript">
+  $('#myTab a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  });
+  var d = new Date();
+  var h = d.getHours();
+  var m = d.getMinutes(); 
+  var s = d.getSeconds();
+  var time = h+":"+m+":"+s;
+  $('#datetimepicker').val(d);
+  jQuery('#datetimepicker').datetimepicker();
+</script>
+</body>
+</html>   
 </div>
