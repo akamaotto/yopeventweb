@@ -44,7 +44,7 @@ $(function() {
         document.getElementById("pano").src = payload;
         document.getElementById("pano1").value = payload;
       } else {
-        document.getElementById("pano").src = "file not found";
+        document.getElementById("pano").src = "Upload cover image";
       }
       spinner.stop();
     });

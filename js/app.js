@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 var app = angular.module("yopi", ["firebase"]);
 app.controller("EventCtrl", function($scope, $firebase, $window) {
   var ref = new Firebase("https://yopi.firebaseio.com/");
+=======
+var app = angular.module("yopi", ['firebase']);
+app.controller("EventCtrl", function($scope, $firebase, $window) {
+  var ref = new Firebase("https://yopevent.firebaseio.com/");
+>>>>>>> origin/master
 
   // facebook init
   window.fbAsyncInit = function() {
@@ -43,11 +49,19 @@ app.controller("EventCtrl", function($scope, $firebase, $window) {
       getUserInfo();
       getPhoto();
       //$window.location.href = "https://yopevent.firebaseapp.com/events.html";
+<<<<<<< HEAD
       } else 
             {
                 console.log('User cancelled login or did not fully authorize.');
             }
     },{scope: 'email,user_photos,user_videos'});
+=======
+    } else 
+    {
+      console.log('User cancelled login or did not fully authorize.');
+    }
+  },{scope: 'email, user_photos'});
+>>>>>>> origin/master
 
   }
 
@@ -56,7 +70,10 @@ app.controller("EventCtrl", function($scope, $firebase, $window) {
       UserId = response.id;
       UserName = response.name;
       UserEmail = response.email;
+<<<<<<< HEAD
       
+=======
+>>>>>>> origin/master
     });
   }
 
@@ -69,6 +86,7 @@ app.controller("EventCtrl", function($scope, $firebase, $window) {
       $scope.Email = UserEmail;
       $scope.PicUrl = response.data.url;
 
+<<<<<<< HEAD
       //$('#myModal').modal('show');
       ref.child("users").child($scope.Id).set({
         UserId: $scope.Id,
@@ -83,6 +101,29 @@ app.controller("EventCtrl", function($scope, $firebase, $window) {
       document.getElementById("UserEmail").innerHTML+= UserEmail;
       document.getElementById("UserPicUrl").innerHTML+= response.data.url;;*/
       
+=======
+
+
+      ref.child("users").child($scope.Id).once('value', function(snapshot) {
+        exists = (snapshot.val() !== null);
+        /*userExistsCallback(userId, exists);*/
+        //$scope.user = snapshot.val();
+      });
+      if (exists) {
+        alert("User exists"); 
+        /*var name = UserName;
+        //var picture = "<img width='"30"' height='"30"' class='"img-responsive img-circle"' src='"+ $scope.PicUrl +"'>";
+        document.getElementById("name").innerHTML = name;*/
+        //document.getElementById("picture").innerHTML = picture;
+      }else{
+        ref.child("users").child($scope.Id).set({
+          Id: $scope.Id,
+          Name: $scope.Name,
+          //Email: $scope.Email,
+          PicUrl: $scope.PicUrl
+        });
+      }
+>>>>>>> origin/master
     });
 
   }
@@ -101,6 +142,7 @@ app.controller("EventCtrl", function($scope, $firebase, $window) {
    ref.parentNode.insertBefore(js, ref);
  }(document));
 
+<<<<<<< HEAD
 //function to handle the sign up form
 $scope.SignUp = function(){
   if ($scope.user.email) {
@@ -108,6 +150,8 @@ $scope.SignUp = function(){
     $('#myModal').modal('toggle');
   }
 };
+=======
+>>>>>>> origin/master
 
 
 
