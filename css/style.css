@@ -1034,12 +1034,12 @@ ul.filter li a i.icon4{
 ul.filter li a i.icon5{
 	background-position:-207px -39px;
 }
-.grid1{
-	position:relative;
-	box-shadow: 0 1px 0px #E6E5E5;
-	-webkit-box-shadow: 0 1px 0px #E6E5E5;
-	-moz-box-shadow: 0 1px 0px #E6E5E5;
-	-o-box-shadow: 0 1px 0px #E6E5E5;
+.grid1 {
+	position: relative;
+box-shadow: 1px 1px 1px 1px rgb(239, 199, 139);
+-webkit-box-shadow: 1px 1px 5px 1px rgb(239, 199, 139);
+-moz-box-shadow: 1px 1px 1px 1px rgb(239, 199, 139);
+-o-box-shadow: 1px 1px 1px 1px rgb(239, 199, 139);
 }
 .sale {
 	font-size: 14px;
@@ -2728,4 +2728,14 @@ h1 {
 .contentImage{
 	height: 220px; 
 	width: 100%
+}
+
+.noImage {
+  height: 6em;
+  width: 6em;
+  background: url("http://s30.postimg.org/b9dk9sizx/photography.png") center no-repeat #e85e57;
+  display: inline-block;
+  float: left;
+  margin: 0 1em 0 0;
+  z-index: 100
 }
